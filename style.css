@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Helvetica';
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5em;
+  background-color: transparent;
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 90%;
+  height: 3px;
+  bottom: 0;
+  border-radius: 10px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 12px;
+}
+
+.header-title p {
+  font-size: 12px;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5em;
+}
+
+.item a {
+  color: black;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  min-height: 200px;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.background {
+  background-image: url("images/background4.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 90vh;
+  color: white;
+  padding: 0;
+}
+
+.irina {
+  background-image: url("images/irina-blok.jpg");
+}
+
+.content-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.intro {
+  background-color: white;
+  box-shadow: inset 0 10px 15px -5px rgba(0, 0, 0, 0.5);
+  padding: 2.5rem 2rem;
+}
+
+.article-title {
+  margin-bottom: 2rem;
+  font-size: 45px;
+  text-align: center;
+}
+
+.article-subtitle {
+  margin-bottom: 1rem;
+  font-size: 40px;
+  text-align: start;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: inset 0 10px 15px -5px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.invert {
+  gap: 5rem;
+  width: 100%;
+}
+
+.invert .content .article-p {
+  align-self: flex-end;
+}
+
+.content {
+  padding-right: 4em;
+  z-index: 10;
+  width: 80%;
+}
+
+.content .article-subtitle, .content-text .article-subtitle{
+  margin-bottom: 2rem;
+}
+
+.balls .article-p {
+  width: 70%;
+}
+
+.source-photo{
+  transform: scale(0.8);
+}
+
+.coment-photo {
+  position: relative;
+  bottom: 2rem;
+  font-size: 14px;
+}
+
+.photo-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.photo-content img {
+  width: 100%;
+}
+
+.section-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.video {
+  width: 80vw;
+  height: 80vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgb(32, 30, 30);
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 19px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-content-image {
+  width: 20%;
+}
+
+.footer-content-image img {
+  width: 100%;
+}
+
+.footer-text {
+  width: 550px;
+  text-align: justify;
+}
+
+.footer-content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-programmer {
+  margin: 0 auto;
+}
+
+.footer-programmer a {
+  color: rgb(196, 35, 35);
+  text-decoration: underline;
+  transition: all .5s ease;
+}
+
+.footer-programmer a:hover {
+  color: rgb(219, 58, 58);
+}
+
+.balls {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.balls::after {
+  content: '';
+  background-color: rgb(4, 0, 255);
+  width: 50%;
+  height: 200%;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  opacity: 0.6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
