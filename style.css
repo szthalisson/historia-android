@@ -92,6 +92,7 @@ main {
 }
 
 .irina {
+  background-attachment: local;
   background-image: url("images/irina-blok.jpg");
 }
 
